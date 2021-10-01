@@ -3,6 +3,7 @@ import Navbar from '../Patterns/Navbar'
 import Buttons from '../Patterns/Buttons'
 import Center from '../Components/Center'
 import Text from '../Components/Text'
+import Alert from '../Components/Alert'
 import PaypalButton from '../Patterns/PaypalButton'
 
 const Home: React.FC = () => {
@@ -14,16 +15,36 @@ const Home: React.FC = () => {
       <div>
         <Center>
           <div
-            className="Container pt-5"
+            className="container pt-3"
           >
-            <div>
-              <h1>
-                Text Area
-              </h1>
-              <Text id="text-area"/>
+            <div
+              className="container w-50"
+              style={{ height: '70px' }}
+            >
+              <Alert
+                id="alert"
+                className="alert alert-success"
+                role="alert"
+              >
+              </Alert>
             </div>
 
-            <div>
+            <div
+              className="container"
+            >
+              <h1
+                style={{ color: '#DDDDDD' }}
+              >
+                Text Area
+              </h1>
+              <Text
+                id="text-area"
+              />
+            </div>
+
+            <div
+              className="container"
+            >
               <Buttons />
             </div>
           </div>

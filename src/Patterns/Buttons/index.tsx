@@ -36,7 +36,12 @@ const Buttons: React.FC = () => {
   const copyCase = (): void => {
     text.select()
     document.execCommand('copy')
-    window.getSelection()?.removeAllRanges()
+    // window.getSelection()?.removeAllRanges()
+
+    const alert: HTMLDivElement = document.getElementById('alert') as HTMLDivElement
+    alert.textContent = 'successfully copied'
+    alert.style.opacity = '1'
+    setTimeout(() => { alert.style.opacity = '0' }, 2000)
   }
 
   const clearCase = (): void => {
@@ -44,7 +49,8 @@ const Buttons: React.FC = () => {
   }
 
   const style = {
-    width: '250px'
+    width: '250px',
+    color: '#DDDDDD'
   }
 
   useEffect(() => {
