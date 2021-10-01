@@ -35,7 +35,7 @@ const Home: React.FC = () => {
               <h1
                 style={{ color: '#DDDDDD' }}
               >
-                Text Area
+                String Converter
               </h1>
               <Text
                 id="text-area"
