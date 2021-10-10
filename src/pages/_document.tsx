@@ -43,33 +43,9 @@ export default class MyDocument extends Document {
             <Head>
                 {/* Config */}
                 <meta charSet="utf-8" />
-                <meta name="description" content="Tool that helps to pass a certain text to uppercase, lowercase,
-                     alternate, first letter of each word capitalized or even reverses the entire text."/>
-                <meta name="author" content=""/>
-                <meta name="keywords" content="text, uppercase, lowercase, alternate, convert, strike, underline, inverse, italic,
-                     bold, transform, online string, string converter"/>
-                <meta name="robots" content="index, nofollow"/>
                 <link rel="icon" href="/favicon.ico" />
-
-                <meta property="og:title" content="Online String Converter"/>
-                <meta property="og:description" content="Tool that helps to pass a certain text to uppercase, lowercase,
-                     alternate, first letter of each word capitalized or even reverses the entire text."/>
-                <meta property="og:site_name" content="xCaser"/>
-                <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://x-caser.vercel.app/"/>
-                <link rel="canonical" href="https://x-caser.vercel.app/"/>
-                <script
-                  type="application/ld+json"
-                  dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                      '@context': 'https://schema.org',
-                      '@type': 'WebSite',
-                      '@id': 'https://x-caser.vercel.app/#website',
-                      url: 'https://x-caser.vercel.app/',
-                      name: 'xCaser - Online String Converter'
-                    })
-                  }}
-                />
+                <meta name="robots" content="index, nofollow"/>
+                <meta name="author" content=""/>
 
               {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>

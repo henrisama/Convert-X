@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { AppProps } from 'next/app'
-import Head from 'next/head'
 import GlobalStyle from '../styles/globals'
 import { useRouter } from 'next/dist/client/router'
 import * as gtag from '../lib/gtag'
@@ -20,9 +19,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Head>
-        <title>xCaser - Online String Converter</title>
-      </Head>
       {<GlobalStyle />}
       <Component {...pageProps} />
     </>
