@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Patterns/Navbar'
+// import Navbar from '../Patterns/Navbar'
 import Buttons from '../Patterns/Buttons'
 import Center from '../Components/Center'
 import Text from '../Components/Text'
@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
       <div>
         <Center>
