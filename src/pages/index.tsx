@@ -47,7 +47,7 @@ const Home: React.FC = () => {
               className="row row-cols-auto justify-content-center"
             >
               <div className="col mb-1">
-                <Link href="/string">
+                <Link href="/String">
                   <button
                     type="button"
                     className="btn btn-dark btn-lg"
