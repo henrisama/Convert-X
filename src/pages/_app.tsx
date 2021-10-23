@@ -19,7 +19,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-      {<GlobalStyle />}
+      <GlobalStyle />
       <Component {...pageProps} />
     </>
   )

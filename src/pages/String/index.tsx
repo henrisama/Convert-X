@@ -1,6 +1,6 @@
 import React from 'react'
-// import Navbar from '../Patterns/Navbar'
-import Buttons from '@/src/Patterns/Buttons'
+import Navbar from '@/src/Patterns/Navbar'
+import Buttons from './Buttons'
 import Center from '@/src/Components/Center'
 import Text from '@/src/Components/Text'
 import Alert from '@/src/Components/Alert'
@@ -22,23 +22,24 @@ const Home: React.FC = () => {
 
         <meta property="og:site_name" content="Convert X"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://convert-x.vercel.app/string/"/>
-        <link rel="canonical" href="https://convert-x.vercel.app/string/"/>
+        <meta property="og:url" content="https://convert-x.vercel.app/String/"/>
+        <link rel="canonical" href="https://convert-x.vercel.app/String/"/>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              '@id': 'https://convert-x.vercel.app/string/#website',
-              url: 'https://convert-x.vercel.app/string/',
+              '@id': 'https://convert-x.vercel.app/String/#website',
+              url: 'https://convert-x.vercel.app/String/',
               name: 'Online String Converter'
             })
           }}
         />
       </Head>
+
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
       </div>
       <div>
         <Center>

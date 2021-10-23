@@ -1,5 +1,5 @@
 import React from 'react'
-// import Navbar from '../Patterns/Navbar'
+import Navbar from '../Patterns/Navbar'
 import Center from '../Components/Center'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -30,13 +30,13 @@ const Home: React.FC = () => {
               '@type': 'WebSite',
               '@id': 'https://convert-x.vercel.app/#website',
               url: 'https://convert-x.vercel.app/',
-              name: 'Online String Converter'
+              name: 'Converter X'
             })
           }}
         />
       </Head>
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
       </div>
       <div>
         <Center>
@@ -54,6 +54,17 @@ const Home: React.FC = () => {
                     style={style}
                   >
                     String
+                  </button>
+                </Link>
+              </div>
+              <div className="col mb-1">
+                <Link href="/Weight">
+                  <button
+                    type="button"
+                    className="btn btn-dark btn-lg"
+                    style={style}
+                  >
+                    Weight
                   </button>
                 </Link>
               </div>
